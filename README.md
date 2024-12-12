@@ -17,13 +17,13 @@ ME-405 Romi Portfolio
 13) M2.5 Nylon Washers
 14) Custom Romi to shoe adapter
 15) Gearmotor and Encoder assembly
-16) Bluetooth Serical adapter
 17) Motor driver and PDP for Romi
 18) 8-channel QTRX sensor array
 19) Bumper Switch Assembley (Right, Left, or both)
 20) Assorted tools
 21) Attached .txt files
 22) Female to Felmale wires
+23) Optinal HC-05 Bluetooth modules
 
 
 ## **Getting started:**
@@ -59,6 +59,8 @@ The final step in Romi assebly before wiring is the bump sensors. You are welcom
 
 ![image](https://github.com/user-attachments/assets/d4550775-a4a1-40d7-85b7-ee4eda08abd7)
 
-## wiring set up
+## wiring set up:
+Next step is the most critical to ensure that Romi opperates as intended. Below is the wiring diagram that we used for our project. If different ports are need please reflect those changes in the code to ensure proper function.
+
 
 
