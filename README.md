@@ -59,11 +59,11 @@ The final step in Romi assebly before wiring is the bump sensors. You are welcom
 
 ![image](https://github.com/user-attachments/assets/d4550775-a4a1-40d7-85b7-ee4eda08abd7)
 
-## wiring set up:
+## Wiring set-up:
 Next step is the most critical to ensure that Romi opperates as intended. Below is the wiring diagram that we used for our project. If different ports are needed please reflect those changes in the code to ensure proper function.
 
 ![image](https://github.com/user-attachments/assets/c73e865e-4d4f-451e-8366-c2fec6e79a89)
 
-## Code set up:
+## Code set-up:
 After verifying that your physcial pins match those specified in the code, load all of the attached .txt files into your python 3 program of choosing and save the file to the Romi as a .py file. Make sure that the .py file names match those verbatum of those of the .txt files, otherwise erros may occur.
 
