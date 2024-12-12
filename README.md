@@ -27,7 +27,7 @@ ME-405 Romi Portfolio
 
 
 ## **Getting started:**
-To get started follow the set up instructions provided with the Romi chassis and on the Romi webpage to secure and attach the Motor driver and PDP for Romi, Gearmotor and Encoder assembly, and Romi Drive and caster wheels. The Gearmotor and Encoder assembly should plug directly into the PDP.
+To get started follow the set-up instructions provided with the Romi chassis and on the Romi webpage to secure and attach the Motor driver and PDP for Romi, Gearmotor and Encoder assembly, and Romi Drive and caster wheels. The Gearmotor and Encoder assembly should plug directly into the PDP.
 
 Romi should now look like this:
 ![image](https://github.com/user-attachments/assets/e760a3ce-15c4-42c0-9b98-1cedb14b8d93)
