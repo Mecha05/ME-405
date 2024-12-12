@@ -29,7 +29,7 @@ ME-405 Romi Portfolio
 ## **Getting started:**
 To get started follow the set up instructions provided with the Romi chassis and on the Romi webpage to secure and attach the Motor driver and PDP for Romi, Gearmotor and Encoder assembly, and Romi Drive and caster wheels. The Gearmotor and Encoder assembly should plug directly into the PDP.
 
-Romi should know look like this:
+Romi should now look like this:
 ![image](https://github.com/user-attachments/assets/e760a3ce-15c4-42c0-9b98-1cedb14b8d93)
 
 These highlighted section show nessicarcy cable connections for power to the Nucleo, Motor control cables, and Encoder cables for communication between the PDP and our Nucleo. Example cables are shown below.
@@ -63,6 +63,9 @@ The final step in Romi assebly before wiring is the bump sensors. You are welcom
 Next step is the most critical to ensure that Romi opperates as intended. Below is the wiring diagram that we used for our project. If different ports are needed please reflect those changes in the code to ensure proper function.
 
 ![image](https://github.com/user-attachments/assets/c73e865e-4d4f-451e-8366-c2fec6e79a89)
+
+[!WARNING}
+Make sure to verify all ports, esspecially ground and power, before turning the system on. If not possible damage could occur to the components or sensors.
 
 ## Code set-up:
 After verifying that your physcial pins match those specified in the code, load all of the attached .txt files into your python 3 program of choosing and save the file to the Romi as a .py file. Make sure that the .py file names match those verbatum of those of the .txt files, otherwise erros may occur.
