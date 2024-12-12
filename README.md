@@ -64,8 +64,8 @@ Next step is the most critical to ensure that Romi opperates as intended. Below 
 
 ![image](https://github.com/user-attachments/assets/c73e865e-4d4f-451e-8366-c2fec6e79a89)
 
-[!WARNING]
-Make sure to verify all ports, esspecially ground and power, before turning the system on. If not possible damage could occur to the components or sensors.
+> [!WARNING]
+> Make sure to verify all ports, esspecially ground and power, before turning the system on. If not possible damage could occur to the components or sensors.
 
 ## Code set-up:
 After verifying that your physcial pins match those specified in the code, load all of the attached .txt files into your python 3 program of choosing and save the file to the Romi as a .py file. Make sure that the .py file names match those verbatum of those of the .txt files, otherwise erros may occur.
