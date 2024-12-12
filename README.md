@@ -64,7 +64,7 @@ Next step is the most critical to ensure that Romi opperates as intended. Below 
 
 ![image](https://github.com/user-attachments/assets/c73e865e-4d4f-451e-8366-c2fec6e79a89)
 
-[!WARNING}
+[!WARNING]
 Make sure to verify all ports, esspecially ground and power, before turning the system on. If not possible damage could occur to the components or sensors.
 
 ## Code set-up:
