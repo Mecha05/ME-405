@@ -37,11 +37,11 @@ These highlighted section show necessary cable connections for power to the Nucl
 ![image](https://github.com/user-attachments/assets/113104cb-3fd7-4eab-9f95-e6f8b0f85cdb)
 
 
-Following this step please attach the BNO055 IMU Breakout Board, in the specified location shown below. A different location may be needed depedning on the quanting and location of bump sensors. Consider a custom mount on the aft part of Romi as the best solution.
+Following this step please attach the BNO055 IMU Breakout Board, in the specified location shown below. A different location may be needed depending on the quantity and location of bump sensors. Consider a custom mount on the aft part of Romi as the best solution.
 
 ![image](https://github.com/user-attachments/assets/d99e1f5d-8476-43cb-95f0-c8b8beb8c088)
 
-Next step in to wire up the IMU, the nessisary pins are power, ground, SDA, SCL, and RST. An example Cable set up is provided below:
+Next step in to wire up the IMU, the necessary pins are power, ground, SDA, SCL, and RST. An example Cable set up is provided below:
 ![image](https://github.com/user-attachments/assets/5ffcd769-5be7-4e52-a887-3fded771dff7)
 
 Wiring the 8-channel QTRX sensor array comes next, I reccomend creating your cables using a 7x1 joined female end to 7 free ends to enable a solid connection on the array board while giving freedom to use any desired pins on the Nucleo. A pin our of the array board are given below.
