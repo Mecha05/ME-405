@@ -75,6 +75,7 @@ The overall structure of the code to run the Romi around the track involves thre
 
 ## Task Diagram
 
+![Term Project Task Diagram](https://github.com/user-attachments/assets/7e2cb9d2-7e19-4277-a54d-ff991995a10e)
 
 
 ## Optional Attachments
