@@ -71,5 +71,11 @@ Next step is the most critical to ensure that Romi opperates as intended. Below 
 ## Code Set-Up:
 After verifying that your physcial pins match those specified in the code, load all of the attached .txt files into your python 3 program of choosing and save the file to the Romi as a .py file. Make sure that the .py file names match those verbatum of those of the .txt files, otherwise erros may occur.
 
-## Optional Sttachments
+The overall structure of the code to run the Romi around the track involves three states: Left Wheel, Right Wheel, and Velocity Control. The Left Wheel tasks runs the left motor and encoder of the Romi and controls the duty cycle based on a reference velocity specified from the velocity control task and a measured velocity from the left encoder. The Right Wheel tasks similarly runs the right motor and encoder of the Romi, controlling the duty cycle based on the reference velocity and the measured velocity from the left encoder. The Velocity control taks is the larger task, which controlls the overall behavior of the Romi. The velocity control task reads reads the line sensor data, calculates a weighted sum, and specifies a yaw rate based on the value of the weighted sum.
+
+## Task Diagram
+
+
+
+## Optional Attachments
 In the attached files there is a .STL file that contains an object for a optional mount. This mount has mounting holes for both a single bump sensor and the 8-channel QTRX sensor array. However due to printing challengs we did not implement this feature into our design. However given more time this mout would be a very benifical thing to have. Locating the  8-channel QTRX sensor array out infront of the robot plus closer to the ground woul dhelp with smoother robot movements and clearer line tracking. Additionly by putting the bump sensor our from you eliminate the risk of not contacking the box, reduces the price of ordering both bump sensor assemblies, and the IMU does not need to be relocated.
