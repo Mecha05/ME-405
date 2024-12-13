@@ -32,7 +32,7 @@ To get started follow the set-up instructions provided with the Romi chassis and
 Romi should now look like this:
 ![image](https://github.com/user-attachments/assets/e760a3ce-15c4-42c0-9b98-1cedb14b8d93)
 
-These highlighted section show nessicarcy cable connections for power to the Nucleo, Motor control cables, and Encoder cables for communication between the PDP and our Nucleo. Example cables are shown below.
+These highlighted section show necessary cable connections for power to the Nucleo, Motor control cables, and Encoder cables for communication between the PDP and our Nucleo. Example cables are shown below.
 
 ![image](https://github.com/user-attachments/assets/113104cb-3fd7-4eab-9f95-e6f8b0f85cdb)
 
