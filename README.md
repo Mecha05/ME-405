@@ -77,6 +77,24 @@ The overall structure of the code to run the Romi around the track involves thre
 
 ![Term Project Task Diagram](https://github.com/user-attachments/assets/7e2cb9d2-7e19-4277-a54d-ff991995a10e)
 
+The task diagram shows the interaction between the three different tasks. The left and right wheel reference velocities are shared from the velocity control task, while the measured left and right wheel measured velocities are shared from the left and right wheel tasks respectively to the velocity control task. These velocities allow the controllers for each motor to control the motor speed to match the reference velocity calculated from the yaw rate and linear velocity controllers in the velocity task. Additionally, these share variables allow the yaw rate and linear velocity tasks to update based on the measured velocity from the left and right wheel tasks. The calibration flag, bump flag, and end flag variables are shared from the velocity control task to signal when the IMU has calibrated on startup, when the bump sensors are triggered, and when the Romi has reached the end of the track.
+
+## Left Wheel Task
+
+![Left Wheel FSM](https://github.com/user-attachments/assets/b50e64d3-8943-4cbc-8401-986b2dfd28cc)
+
+The Left Wheel Task Finite State Machine displays the three states within the Left Wheel task. State 0 is simply a setup state that runs only until the calibration flag reads true once the IMU has been calibrated in the Velocity Control task. State 1 is the state where the control of the motor occurs. State one updates the left encoder and calculates the measured velocity of the left wheel. State 1 takes in the shares variable, including the reference velocity of the left wheel from the Velocity Control task, which is fed into the left wheel PI controller. The left wheel controller will return a duty cycle for the motor to keep the measured velocity of the wheel at the reference velocity. Finally, state 1 also puts the velocity of the left wheel into the shares variable to be used in the Velocity Control task. State 2 is used to avoid the wall and return to the start once the bump flag or end flag is true, which has been harcoded within the Velocity Control task, meaning the left wheel task is in an idle state until the bump flag and end flag are false.
+
+## Right Wheel Task
+
+![Right Wheel FSM](https://github.com/user-attachments/assets/a602c13f-b853-402f-b12a-679cf94af513)
+
+Similar to the Left Wheel Task, the Right Wheel Task Finite State Macine shows the three states within the Right Wheel task. State 0 runs and sets up the motor until the calibration flag reads true after the IMU has been calibrated in the Velocity Control Task. State 1 controls the right motor by updating the right aencoder and calculates the measured velocity. It also takes in the reference velocity of the right wheel from the Velocity control task, which is used in the right wheel PI controller. The PI controller returns a duty cycle to update the motor and keep the measured velocity of the right wheel at the reference velocity. State 2 is used to avoid the wall and return to the start once the bump flag or end flag is true, which has been haroded within the Velocity Control task, measning the left wheel task is in an idle state until the bump flag and end flag are flase.
+
+## Velocity Control Task
+
+![Velocity Control FSM](https://github.com/user-attachments/assets/c5533523-61bb-47b6-b4a3-104a45336083)
+
 
 ## Optional Attachments
 In the attached files there is a .STL file that contains an object for a optional mount. This mount has mounting holes for both a single bump sensor and the 8-channel QTRX sensor array. However due to printing challengs we did not implement this feature into our design. However given more time this mout would be a very benifical thing to have. Locating the  8-channel QTRX sensor array out infront of the robot plus closer to the ground woul dhelp with smoother robot movements and clearer line tracking. Additionly by putting the bump sensor our from you eliminate the risk of not contacking the box, reduces the price of ordering both bump sensor assemblies, and the IMU does not need to be relocated.
