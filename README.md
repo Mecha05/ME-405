@@ -26,7 +26,7 @@ ME-405 Romi Portfolio
 23) Optional HC-05 Bluetooth modules
 
 
-## **Getting started:**
+## **Getting Started:**
 To get started follow the set-up instructions provided with the Romi chassis and on the Romi webpage to secure and attach the Motor driver and PDP for Romi, Gearmotor and Encoder assembly, and Romi Drive and caster wheels. The Gearmotor and Encoder assembly should plug directly into the PDP.
 
 Romi should now look like this:
@@ -59,7 +59,7 @@ The final step in Romi assebly before wiring is the bump sensors. You are welcom
 
 ![image](https://github.com/user-attachments/assets/d4550775-a4a1-40d7-85b7-ee4eda08abd7)
 
-## Wiring set-up:
+## Wiring Set-Up:
 Next step is the most critical to ensure that Romi opperates as intended. Below is the wiring diagram that we used for our project. If different ports are needed please reflect those changes in the code to ensure proper function.
 
 ![image](https://github.com/user-attachments/assets/506046b4-3178-4a1f-891e-dd3a5c93631e)
@@ -68,8 +68,8 @@ Next step is the most critical to ensure that Romi opperates as intended. Below 
 > [!WARNING]
 > Make sure to verify all ports, esspecially ground and power, before turning the system on. If not possible damage could occur to the components or sensors.
 
-## Code set-up:
+## Code Set-Up:
 After verifying that your physcial pins match those specified in the code, load all of the attached .txt files into your python 3 program of choosing and save the file to the Romi as a .py file. Make sure that the .py file names match those verbatum of those of the .txt files, otherwise erros may occur.
 
-## optional attachments
+## Optional Sttachments
 In the attached files there is a .STL file that contains an object for a optional mount. This mount has mounting holes for both a single bump sensor and the 8-channel QTRX sensor array. However due to printing challengs we did not implement this feature into our design. However given more time this mout would be a very benifical thing to have. Locating the  8-channel QTRX sensor array out infront of the robot plus closer to the ground woul dhelp with smoother robot movements and clearer line tracking. Additionly by putting the bump sensor our from you eliminate the risk of not contacking the box, reduces the price of ordering both bump sensor assemblies, and the IMU does not need to be relocated.
