@@ -23,7 +23,7 @@ ME-405 Romi Portfolio
 20) Assorted tools
 21) Attached .txt files
 22) Female to Felmale wires
-23) Optinal HC-05 Bluetooth modules
+23) Optional HC-05 Bluetooth modules
 
 
 ## **Getting started:**
