@@ -62,7 +62,8 @@ The final step in Romi assebly before wiring is the bump sensors. You are welcom
 ## Wiring set-up:
 Next step is the most critical to ensure that Romi opperates as intended. Below is the wiring diagram that we used for our project. If different ports are needed please reflect those changes in the code to ensure proper function.
 
-![image](https://github.com/user-attachments/assets/c73e865e-4d4f-451e-8366-c2fec6e79a89)
+![image](https://github.com/user-attachments/assets/506046b4-3178-4a1f-891e-dd3a5c93631e)
+
 
 > [!WARNING]
 > Make sure to verify all ports, esspecially ground and power, before turning the system on. If not possible damage could occur to the components or sensors.
